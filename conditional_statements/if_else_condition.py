@@ -138,14 +138,14 @@
 
 """To check if the first digit of the given number is even or odd"""
 #
-# number = 7234
-# str_num = str(number)
-#
-# if int(str_num[0]) % 2 == 0:
-#     print(f"The first digit {str_num[0]} is an even number")
-#
-# else:
-#     print(f"The first digit {str_num[0]} is an odd number")
+number = 7234
+str_num = str(number)
+
+if int(str_num[0]) % 2 == 0:
+    print(f"The first digit {str_num[0]} is an even number")
+
+else:
+    print(f"The first digit {str_num[0]} is an odd number")
 
 ################################################################
 
