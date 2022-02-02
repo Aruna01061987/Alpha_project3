@@ -4,6 +4,9 @@
 
 files = ("Amazon", "flipkart", "walmart", "gmail", "yahoo")
 
-res = {(file,len(file)) for file in files}
+res = {(item, index) for item, index in enumerate(files)}
 
 print(res)
+print(type(res))
+
+
