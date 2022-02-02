@@ -19,5 +19,5 @@
 
 """WAP to check if the first digit in the given number is even or odd"""
 
-number = for digit in str(number) if int(str(number)[0]) % 2 == 0 ]
+# number = for digit in str(number) if int(str(number)[0]) % 2 == 0 ]
 
