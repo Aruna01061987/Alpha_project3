@@ -140,13 +140,29 @@
 #
 # even_indexed_char("hello world")
 
-
-
-
-
-
-
-
 # string = "hello world"
+
+#
+# string = "adb#$$674"
+#
+# count = 0
+#
+# for char in string:
+#     if not ("a" <= char.lower() <= "z" or "0" <= char <= "9"):
+#         count += 1
+#
+# print(count)
+
+def special_count(string):
+
+t    for char in string:
+        if not ("a" <= char.lower() <= "z" or "0" <= char <= "9"):
+            count += 1
+    return count
+
+
+print(special_count("abcd#$%%345"))
+
+
 
 
