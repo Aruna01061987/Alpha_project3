@@ -1,0 +1,4 @@
+Hello world
+Hi how are you
+python programming
+python language is a high level language
