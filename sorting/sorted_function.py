@@ -122,18 +122,58 @@
 
 """WA function that accepts two string as input and checks if they are anagrams"""
 
+#
+# def is_anagram(str1, str2):
+#
+#     if len(str1) == len(str2):
+#         for char in str1:
+#             if char in str2:
+#                 return True
+#     else:
+#         return False
+#
+#
+# print(is_anagram('listen', 'silent'))
 
-def is_anagram(str1, str2):
 
-    if len(str1) == len(str2):
-        for char in str1:
-            if char in str2:
-                return True
-    else:
-        return False
+"""WAP to find the longest non-repeated word from the sentence"""
 
 
-print(is_anagram('listen', 'silent'))
+# sentence = "python is programming  language and programming is fun"
+#
+# words = sentence.split()
+#
+# d = {word: len(word) for word in words if words.count(word) == 1}
+#
+# res = sorted(d.items(), key=lambda item: item[1])
+#
+# print(res[-1])
+
+"""WAP to to sort the list based on the first character of the word"""
+
+# l = ["python", "apple", "language", "c++", "java"]
+#
+#
+# print(sorted(l))
+#
+# # print(sorted(l, key=lambda word: word[0]))
+
+"""WAP to sort the list based on the last character of the word"""
+
+
+# l = ["python", "apple", "language", "c++", "java"]
+
+# print(sorted(l, reverse=True))
+#
+# print(sorted(l, key=lambda word: word[-1]))
+
+# word = "python"
+# print(word[-1])
+
+
+
+
+
 
 
 
