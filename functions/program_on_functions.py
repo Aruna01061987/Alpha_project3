@@ -197,21 +197,21 @@ c. keyword only arguments"""
 # print(fib(3))
 
 """WAF that takes variable number of inputs and return the length of all the iterables """
-#
-# def func(*args, **kwargs):
-#
-#     for item in args:
-#         if not isinstance(item, (int, float, bool, complex)):
-#             print (item, len(item))
-#
-#
-# func(1, 2.3, "a", [1, 2, 3], (1, 2, 3, 4), "string")
+
+def func(*args, **kwargs):
+
+    for item in args:
+        if not isinstance(item, (int, float, bool, complex)):
+            print (item, len(item))
+
+
+func(1, 2.3, "a", [1, 2, 3], (1, 2, 3, 4), "string")
 
 #
 # def func(*args):
 #     print(*args)
-#
-#
+
+
 # func()
 
 

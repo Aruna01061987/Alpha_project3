@@ -110,8 +110,18 @@ print(palindrome(list_))
 # # print(even_odd(1))
 
 
+"""WAP to get a list of tuples with character and iys ascii value pair"""
 
 
+# word = "python"
+#
+#
+# def ascii_(ch):
+#     return ch, ord(ch)
+#
+#
+# res = map(ascii_, word)
+# print(list(res))
 
 
 

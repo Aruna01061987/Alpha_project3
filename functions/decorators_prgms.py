@@ -344,4 +344,54 @@
 #
 # print(d("hello"))
 
+# def calci(func):
+#     func.count = 0
+#     def wrapper(*args, **kwargs):
+#         print(f"you called {func.__name__} function")
+#         res = func(*args, **kwargs)
+#         func.count += 1
+#         print(f"you called {func.__name__} {func.count} times")
+#         return res
+#     return wrapper
+#
+#
+# @calci
+# def add(a, b):      #add = calci(add)
+#     return a + b
+#
+#
+# d = add(3,4)        #add = calci(add)
+# print(d)
+
+
+def log(func):
+    def wrapper(*args, **kwargs):
+        print("calling decorator")
+        return func(*args, **kwargs)
+    return wrapper
+
+
+def logging(cls):
+    for key, value in cls.__dict__.items():
+        if callable(value):
+            setattr(cls, key, log(value))
+    return cls
+
+@logging
+class Arithmetic:
+    def __init__(self, a, b):
+        self.a = a
+        self.b =b
+
+    def add(self):
+        return self.a + self.b
+
+    def sub(self):
+        return self.a + self.b
+
+    def mul(self):
+        return self.a * self.b
+
+
+a = Arithmetic(4, 5)
 
